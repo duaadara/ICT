@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESSORIES</title>
+    <link rel="stylesheet"href="outfits.css"> 
+    <a href="Website.html">Home</a>
+</head>
+<body>
+    
+<h1>ACCESSORIES</h1>
+<div class="main-content">
+    
+    </div>
+
+
+<div class="product-images">
+    <div class="product-item">
+      <img src="IMG-20231207-WA0230.jpg" alt="Product 1" height="250px" width="250px">
+      <p>Drop earings by Bottega Vaneta </p>
+    </div>
+    <div class="product-item">
+      <img src="Come scegliere gli occhiali da sole_ consigli pratici – Con cosa lo metto_.jpg" alt="Product 2" height="250px" width="250px">
+      <p>Square frame fashion glasses</p>
+    </div>
+    <div class="product-item">
+      <img src="IMG-20231207-WA0223.jpg" alt="Product 3" height="250px" width="250px">
+      <p>The Beis Weekender travel bag</p>
+    </div>
+  </div>
+  
+	 <footer>
+    <div class="social-buttons">
+      <a href="#" class="fa fa-facebook"></a>  
+<a href="#" class="fa fa-twitter"></a>  
+<a href="#" class="fa fa-pinterest"></a>  
+<a href="#" class="fa fa-linkedin"></a>  
+<a href="#" class="fa fa-instagram"></a>  
+<a href="#" class="fa fa-youtube"></a>  
+<a href="#" class="fa fa-google"></a>  
+<a href="#" class="fa fa-snapchat-ghost"></a>  
+<a href="#" class="fa fa-skype"></a>  
+      <!-- Add more social media icons or links as needed -->
+    </div>
+    <p style="color:white;">Fashion Arena &copy; All Rights Reserved 2023</p>
+  </footer>
+  <script>
+    // Select all product item containers
+    const productItems = document.querySelectorAll(".product-item");
+  
+    // Loop through each product item and create a button for it
+    productItems.forEach(productItem => {
+        const moreButton = document.createElement("button");
+        moreButton.textContent = "More";
+        moreButton.href = "#"; // Replace with the actual link
+  
+        // Insert the button before the closing </div> tag of the product item
+        productItem.insertBefore(moreButton, productItem.lastChild);
+    });
+  </script>
+</body>
+</html>
